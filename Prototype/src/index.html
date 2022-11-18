@@ -5,20 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yisud</title>
+    <script src="codigo.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div id="botones">
-                
-            </div>
-            <div id="logo">
-
-            </div>
-        </div>
+    <!-- Carga del header-->
+    <header id ="cabecera" class="cargarCabecera">
+        <iframe src="header.html" frameborder="0"></iframe>
     </header>
     <main>
 
+
+        <!-- input tag, barra de busqueda-->
+         <input id="searchbar" onkeyup="search_web()" type="text"
+        name="search" placeholder="Search ...">
+  
+        <!-- ordered list lista de busquedas -->
+        <ol id='list'>
+            <li class="listSearch">Proyectos</li>
+            <li class="listSearch">Recaudaciones</li>
+            <li class="listSearch">categorias</li>
+            <li class="listSearch">Crear Proyectos</li>
+            <li class="listSearch">Patrocinadores</li>
+            <li class="listSearch">Sobre nosotros</li>
+        </ol>
+        <!--Presentación-->
+        <div class="intro">
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200</p>
+            <img src="img/index.png" alt="">
+        </div>
+
+        <!--Carga de imagenes automatica-->
+        <div id="patrocinadores" >
+        
+        </div>
     </main>
     <footer>
 
