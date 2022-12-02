@@ -6,40 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yisud</title>
     <script src="codigo.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
-<body>
+<body >
     <!-- Carga del header-->
-    <header id ="cabecera" class="cargarCabecera">
-        <iframe src="header.html" frameborder="0"></iframe>
-    </header>
-    <main>
+    <header id="header"></header> <br> <br>
 
+     <!-- input tag, barra de busqueda-->
+     <input id="searchbar" onkeyup="search_web()" type="text"
+     name="search" placeholder="buscar ...">
 
-        <!-- input tag, barra de busqueda-->
-         <input id="searchbar" onkeyup="search_web()" type="text"
-        name="search" placeholder="Search ...">
-  
-        <!-- ordered list lista de busquedas -->
-        <ol id='list'>
-            <li class="listSearch">Proyectos</li>
-            <li class="listSearch">Recaudaciones</li>
-            <li class="listSearch">categorias</li>
-            <li class="listSearch">Crear Proyectos</li>
-            <li class="listSearch">Patrocinadores</li>
-            <li class="listSearch">Sobre nosotros</li>
-        </ol>
+     <!-- ordered list lista de busquedas -->
+     <ol id='list'  class="lista">
+         <li class="listSearch">Proyectos</li>
+         <li class="listSearch">Recaudaciones</li>
+         <li class="listSearch">categorias</li>
+         <li class="listSearch">Crear Proyectos</li>
+         <li class="listSearch">Patrocinadores</li>
+         <li class="listSearch">Sobre nosotros</li>
+     </ol>
+
+    <main class="hero">
         <!--Presentación-->
-        <div class="intro">
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200</p>
-            <img src="img/index.png" alt="">
+        <section class="hero_container">
+            <div class="hero_texts">
+                <h2 class="hero_title">Sobre nosotros</h2> <br>
+                <p class="hero_parrafo">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200</p>
+               
+            </div>
+       </section> 
+        
+      </main>
+        
+        <h2 class="title-patro">Patrocinadores</h2>   
+        <div id="patrocinadores" class="patron" >   
+           
         </div>
 
-        <!--Carga de imagenes automatica-->
-        <div id="patrocinadores" >
+        <!--Categorias-->
+        <div class="wrap">
+            <h1>Categorias</h1> <br>
+            <div class="store-wrapper">
+              
+              <section class="products-list">
+                <div class="product-item" category="salud">
+                  <img src="img/icons8-maletín-médico-96.png" alt="">
+                  <a href="#">Salud</a>
+                </div>
+                <div class="product-item" category="deportes">
+                  <img src="img/icons8-boombox-96.png" alt="">
+                  <a href="#">Deportes</a>
+                </div>
+                <div class="product-item" category="cine">
+                  <img src="img/icons8-documental-96.png" alt="">
+                  <a href="#">Cine</a>
+                </div>
+                <div class="product-item" category="gastronomia">
+                  <img src="img/icons8-fideos-96.png" alt="">
+                  <a href="#">Gastronomía</a>
+                </div>
+                </div>
+              </section>
+
+            </div>
+          </div>
         
-        </div>
-    </main>
+    
     <footer>
 
     </footer>

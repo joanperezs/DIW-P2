@@ -4,7 +4,7 @@
 function search_web() {
     let input = document.getElementById('searchbar').value
     input=input.toLowerCase();
-    let x = document.getElementsByClassName('list');
+    let x = document.getElementsByClassName('listSearch');
       
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
@@ -16,6 +16,8 @@ function search_web() {
     }
 }
 
+
+
 /*
 Array/objs para pintar patrocinadores con una función
 */
@@ -24,13 +26,13 @@ var patrocinador =  [{
         Image : "img/LOGO_CINESA_2.png"
     },
     {
-        Image : "img/LOGO_CINESA_2.png"
+        Image : "img/mallorcalive.jpeg"
     },
     {
-        Image : "img/LOGO_CINESA_2.png"
+        Image : "img/primavera-sound.jpg"
     },
     {
-        Image : "img/LOGO_CINESA_2.png"
+        Image : "img/galicia.jpg"
     }
     ]
 
@@ -38,6 +40,11 @@ var patrocinador =  [{
 
     for (let i = 0; i < patrocinador.length; i++) {
       document.getElementById('patrocinadores').innerHTML +=
-        "<div class='patrocinador'>" + '<img src ='+patrocinador[i].Image +'>'+ '</div>'
+        "<div class='patrocinador'>" + '<img  src ='+patrocinador[i].Image +'>'+ '</div>'
     }
+
+
+    $(document).ready(() =>{
+        $('#header').load('header.html');
+    });
   

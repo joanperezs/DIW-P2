@@ -1,0 +1,157 @@
+@import '_hero';
+@import '_mixin';
+
+*{
+  margin: bottom;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+.nav {
+  background-color: #3F51B5;
+}
+
+.nav .nav_h1 {
+  font-family: sans-serif;
+  size: 48px;
+  @include crearflexbox(space-evenly);
+  color: #fff;
+}
+
+.nav .nav_container {
+  width: 90%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+.nav .nav_item {
+  color: #fff;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.nav .nav_item--active {
+  text-decoration: underline;
+}
+
+.nav .nav_item:hover {
+  color: #000;
+}
+
+
+@media (min-width: 764px) {
+    .nav .nav_item__container .hero .hero_container{
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width:320px) {
+    .nav .nav_item__container .hero .hero_container{
+      justify-content: flex-start;
+    }
+  }
+
+
+#searchbar{
+    margin-left: 15%;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  input[type=text] {
+     width: 30%;
+     -webkit-transition: width 0.15s ease-in-out;
+     transition: width 0.15s ease-in-out;
+  }
+
+  /* When the input field gets focus,
+       change its width to 100% */
+  input[type=text]:focus {
+    width: 70%;
+  }
+
+ #list{
+   font-size:  1.5em;
+   margin-left: 90px;
+  }
+
+.listSearch{
+  display: list-item;    
+ } 
+
+
+
+ .patron{
+
+  @include crearflexbox(space-evenly);
+ 
+
+ }
+
+ .patrocinador{
+  border: 5px solid #607D8B;
+  border-radius: 20px;
+}
+
+img{
+  border-radius: 20px;
+  height: 150px;
+  width: 200px;
+  
+
+}
+
+.title-patro{
+  @include crearflexbox(space-evenly);
+ 
+  font-family: sans-serif;
+  margin: 20px;
+  color:#000
+
+}
+
+
+.wrap{
+
+  @include crearflexbox(center);
+  font-family: sans-serif;
+  margin: 20px;
+  color:#000;
+
+  .products-list{
+  
+      
+
+      .product-item{
+      
+          width:300%;
+          flex-wrap: wrap;
+          align-items: center;
+          padding-bottom: 1rem;
+          margin-top: -1px;
+          text-align: center;
+          white-space: nowrap;
+        }
+
+  }
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */
