@@ -1,0 +1,85 @@
+body {
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 200px 400px;
+  grid-template-areas: "div" "login";
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  border: 0px;
+  background-color: #7184f5;
+}
+body .volver {
+  grid-area: div;
+  display: flex;
+  justify-content: flex-start;
+}
+body .volver .boton {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #303F9F;
+  width: auto;
+  height: 10%;
+}
+body .volver .boton a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.login {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  grid-area: login;
+}
+.login .h1 {
+  background-color: #303F9F;
+  height: 20%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-top-left-radius: 10px 10px;
+  border-top-right-radius: 10px 10px;
+}
+.login .form {
+  display: flex;
+  height: 80%;
+  background-color: #3F51B5;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-right-radius: 10px 10px;
+  border-bottom-left-radius: 10px 10px;
+}
+.login .form input {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.login .form button {
+  background-color: #607D8B;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+.login .cookies {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  color: white;
+  font-family: arial;
+  text-align: center;
+}
+.login .cookies__boton {
+  background: initial;
+  border: 2px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  color: white;
+  width: 5rem;
+  text-align: center;
+}/*# sourceMappingURL=login.css.map */

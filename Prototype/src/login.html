@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="volver">
+        <div class="boton"><a href="index.html">Volver atras</a></div>
+    </div>
+    <div class="login">
+        <div class="h1">
+            <h1 >Login</h1>
+        </div> 
+        <div class="form">
+                <div>
+                    <input type="text" name="u" placeholder="Usuario" required="required" />
+                </div>
+                <div>
+                    <input type="password" name="c" placeholder="Contraseña" required="required" />
+                </div>
+                
+                <div>
+                    <button type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+                </div>
+        </div>
+
+        <div hidden  class="cookies">
+            <h2 class="cookies__titulo">¿Aceptas nuestras Cookies?</h2> 
+            <p class="cookies__texto">Usamos cookies para mejorar tu experiencia en la web.</p>
+            <div class="cookies__botones">
+                <button class="cookies__boton cookies__boton--no">No</button>
+                <button class="cookies__boton cookies__boton--si">Si</button>
+            </div>
+        </div>
+
+        <script>
+            setTimeout(() => {
+                var mensaje = document.getElementsByClassName("cookies")
+                console.log(mensaje)
+            }, "3000")
+        </script>
+    </div>
+    
+</body>
+</html>

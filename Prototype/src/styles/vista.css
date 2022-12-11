@@ -1,0 +1,76 @@
+body {
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  border: 0px;
+  padding: 20%;
+  background-color: #7184f5;
+}
+
+.main {
+  box-sizing: border-box;
+  display: flex;
+  grid-template-columns: 1200px;
+  grid-template-rows: 100px 500px;
+  grid-template-areas: "img" "descripcion";
+}
+.main .img {
+  grid-area: img;
+  width: 800px;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+.main .img .imgs {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main .descripcion {
+  background-color: #303F9F;
+  color: #fff;
+  grid-area: descripcion;
+  justify-content: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main .descripcion .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+}
+.main .descripcion .icon-progreso {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.main .descripcion .botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+.main .descripcion .botones button {
+  background-color: #82C3EC;
+  color: #F1F6F5;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+.main .descripcion .icon-compartir {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.main .descripcion .icon-compartir .fa {
+  padding: 0.6rem;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=vista.css.map */

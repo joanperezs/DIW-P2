@@ -1,0 +1,64 @@
+@import '_mixin';
+
+/*@mixin arreglar-imagen{
+    background : {
+        size: cover;
+        repeat: no-repeat;
+        position: center;
+    }
+};*/
+
+
+    
+
+.hero{
+    
+
+    .hero_container{
+        height: calc(100vh -  70px);
+
+        background-color: #3f51b5;
+        color: #fff;
+        font-size: 2rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .hero-img {
+            max-width: 10%;
+        }
+        .hero_texts{
+
+            position: relative;
+
+            
+            
+
+            .hero_title{
+                order: 1;
+                padding-top: 2%;
+                text-align: center;
+                
+            }
+        
+            .hero_parrafo{
+                order: 2;
+                font-size: pixels-rem(28);
+                text-align: left;
+                padding-right: 40%;
+                padding-left: 2%;
+            }
+
+
+
+            
+        }
+
+    }
+
+
+
+
+}
